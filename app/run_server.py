@@ -18,7 +18,8 @@ from time import strftime
 # initialize our Flask application and the model
 app = flask.Flask(__name__)
 model = None
-modelpath = "/app/app/models/pipeline.dill"
+modelpath = "/home/rik/PycharmProjects/project_Real_Estate/Real_Estate/app/models/pipeline.dill"
+# modelpath = "/app/app/models/pipeline.dill"
 
 handler = RotatingFileHandler(filename='app.log', maxBytes=100000, backupCount=10)
 logger = logging.getLogger(__name__)
